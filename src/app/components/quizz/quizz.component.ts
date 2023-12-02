@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import quizz_questions from "../../../assets/data/quizz_questions.json"
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-quizz',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './quizz.component.html',
   styleUrl: './quizz.component.css'
 })
@@ -34,8 +35,8 @@ export class QuizzComponent implements OnInit{
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
 
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
+      //console.log(this.questionIndex)
+      //console.log(this.questionMaxIndex)
     }
 
   }
